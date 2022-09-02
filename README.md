@@ -1,5 +1,5 @@
 # Frontend Assignment | Dukaan
-#### Deployed Site: https://memories-project-swayam.netlify.app/
+#### Deployed Site: 
 
 ## Technologies Used
 
