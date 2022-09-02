@@ -1,11 +1,17 @@
-import "./styles.css";
+import Header from "./components/Header";
+import Usage from "./components/Usage";
+import Products from "./components/Products";
+import Footer from "./components/Footer";
+import Form from "./components/Form";
 
 export default function App() {
   return (
-    <div className="App">
-        <div className="bg-default-blue">abc</div>
-        <div>aaa</div>
-        <div>dff</div>
-    </div>
+    <>
+      <Header />
+      <Form />
+      <Usage />
+      <Products />
+      <Footer />
+    </>
   );
 }
