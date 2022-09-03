@@ -1,5 +1,5 @@
 # Frontend Assignment | Dukaan
-#### Deployed Site: 
+#### Deployed Site: https://dukaan-project-swayamnayak.netlify.app/
 
 ## Technologies Used
 
