@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const LogoImage = styled.img`
+export const LogoImageForHeader = styled.img`
     transform: translate(130%, 100%);
 `;
 

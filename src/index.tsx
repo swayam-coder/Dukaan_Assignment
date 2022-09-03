@@ -6,7 +6,7 @@ const theme = createTheme({
         fontFamily: 'Galano Grotesque',
         h4: {
             fontWeight: "600px",
-        }
+        },
     },
     palette: {
         primary: {
@@ -18,7 +18,7 @@ const theme = createTheme({
             main: "#146EB4",
             dark: "#4D4D4D",
             light: "#F5F3F3"
-        },
+        }
     },
     components: {
         MuiPagination: {
@@ -28,6 +28,25 @@ const theme = createTheme({
                     position: "relative"
                 },
             }, 
+        },
+        MuiLink: {
+            styleOverrides: {
+                root: {
+                    textDecoration: 'none',
+                    fontFamily: 'Galano Grotesque',
+                }
+            }
+        },
+        MuiBadge: {
+            variants: [
+                {
+                    props: { color: 'primary' },
+                    style: {
+                        backgroundColor: 'white',
+                        color: "black"
+                    }
+                }
+            ]
         }
     }
 })

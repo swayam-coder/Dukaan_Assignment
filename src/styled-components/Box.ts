@@ -1,4 +1,4 @@
-import { styled as muiStyled } from "@mui/material";
+import { Grid, styled as muiStyled } from "@mui/material";
 // import styled from '@emotion/styled'
 import Box from "@mui/material/Box";
 import Container from '@mui/material/Container';
@@ -44,7 +44,7 @@ export const ResultDiv = muiStyled(Box)(() => ({
     
 }));
 
-export const FooterContainer = muiStyled(Box)(({ theme: { palette: { primary } }}) => ({
+export const FooterContainer = muiStyled(Grid)(({ theme: { palette: { primary } }}) => ({
     backgroundColor: primary.dark,
     height: "100%"
 }));

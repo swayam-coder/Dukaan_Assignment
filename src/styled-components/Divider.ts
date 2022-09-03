@@ -9,3 +9,10 @@ export const FormDivider = muiStyled(Divider)<{ top: string }>`
     height: 2px;
     background: #D9D9D9;
 `;
+
+export const FooterDivider = muiStyled(FormDivider)<{ top: string }>(({ theme: { palette: { secondary }}}) => ({
+    background: secondary.light,
+    height: "0.9px",
+    margin: "auto",
+    width: "80%"
+}))
