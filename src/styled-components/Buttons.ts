@@ -25,11 +25,11 @@ export const DownloadBtn = muiStyled(Button)(({ theme: { palette: { primary } } 
 }))
 
 export const FooterBadge = muiStyled(Badge)(({ theme: { palette: { primary } } }) => ({
-    '& .MuiBadge-badge': {
-        backgroundColor: 'white', 
-        color: primary.dark
+    '& .MuiBadge-': {
+        '&badge': {
+            backgroundColor: 'white', 
+            color: primary.dark,
+            margin: "-1px -15px"
+        }
     },
-    '& .MuiBadge-root': {
-        margin: "5px 15px"
-    }
 }))
