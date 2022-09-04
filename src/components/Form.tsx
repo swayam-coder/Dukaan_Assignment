@@ -1,6 +1,6 @@
-import { Box, Button, Grid, Pagination, TextField, Typography } from '@mui/material'
+import { Box, Button, Container, Grid, Pagination, TextField, Typography } from '@mui/material'
 import { FormContainer, FormDiv, ResultDiv, ResultHeader } from '../styled-components/Box'
-import { GenerateSloganBtn } from '../styled-components/Buttons'
+import { DownloadAllResutsBtn, GenerateSloganBtn } from '../styled-components/Buttons'
 import { FormDivider } from '../styled-components/Divider'
 import { ResultGrid } from '../styled-components/Grid'
 import { ResultItem } from '../styled-components/Paper'
@@ -9,7 +9,6 @@ import results from "../data";
 
 export default function Form() {
   return (
-    <Box sx={{ height: "1280px", paddingBottom: "100px" }}>
         <FormContainer>
           <FormDiv>
             <FormTitle variant="h3">Free slogan maker</FormTitle>
@@ -30,12 +29,12 @@ export default function Form() {
           <ResultDiv>
             <ResultHeader>
               <Typography variant="h6">We have generated 1,023 slogans for “cozy”</Typography>
-              <Button variant="outlined" size="medium">Download All</Button>
+              <DownloadAllResutsBtn variant="outlined" size="medium">Download All</DownloadAllResutsBtn>
             </ResultHeader>
             <ResultGrid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3  }}>
               {
-                results.map((res) => (
-                  <Grid key={res.id} item xs={6} sx={{ display: 'flex', justifyContent: 'center' }}>
+                results.map((res) => ( 
+                  <Grid key={res.id} item mobileS={12} laptop={6} sx={{ display: 'flex', justifyContent: 'center' }}>
                     <ResultItem elevation={0} sx={{ textAlign: "left" }}>{res.data}</ResultItem>
                   </Grid>
                 ))
@@ -45,6 +44,5 @@ export default function Form() {
           <FormDivider top="-150px"/>
           <Pagination count={10} color="primary" size="small" sx={{ position: 'relative', top: "-130px" }}/>
         </FormContainer>
-      </Box>
   )
 }

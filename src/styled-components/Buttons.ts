@@ -33,3 +33,9 @@ export const FooterBadge = muiStyled(Badge)(({ theme: { palette: { primary } } }
         }
     },
 }))
+
+export const DownloadAllResutsBtn = muiStyled(Button)(({ theme }) => ({
+    [theme.breakpoints.between(theme.breakpoints.values.mobileS, theme.breakpoints.values.tablet)]: {
+        paddingTop: "15px"
+    },
+}))

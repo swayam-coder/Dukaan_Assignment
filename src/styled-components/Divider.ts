@@ -1,13 +1,20 @@
 import { styled as muiStyled } from "@mui/material";
 import Divider from '@mui/material/Divider';
 
-export const FormDivider = muiStyled(Divider)<{ top: string }>`
-    position: relative;
+const FormDivider1 = muiStyled(Divider)(({ theme }) => ({
+    position: "relative",
+    margin: "auto 192px",
+    border: "none",
+    height: "2px",
+    background: "#D9D9D9",
+
+    [theme.breakpoints.down(theme.breakpoints.values.laptop)]: {
+        margin: "auto 100px"
+    }
+}))
+
+export const FormDivider = muiStyled(FormDivider1)<{ top: string }>`
     top: ${p => p.top };
-    margin: auto 192px;
-    border: none;
-    height: 2px;
-    background: #D9D9D9;
 `;
 
 export const FooterDivider = muiStyled(FormDivider)<{ top: string }>(({ theme: { palette: { secondary }}}) => ({
