@@ -7,6 +7,10 @@ export const ResultGrid = muiStyled(Grid)(({ theme }) => ({
 
     [theme.breakpoints.down(theme.breakpoints.values.lg)]: {
         padding: "192px 100px"
+    },
+
+    [theme.breakpoints.down(theme.breakpoints.values.md)]: {
+        padding: "192px 50px"
     }
 }))
 

@@ -34,7 +34,7 @@ export default function Form() {
             <ResultGrid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3  }}>
               {
                 results.map((res) => ( 
-                  <Grid key={res.id} item sm={12} lg={6} sx={{ display: 'flex', justifyContent: 'center' }}>
+                  <Grid key={res.id} item sm={12} lg={6} sx={{ display: 'flex', justifyContent: 'center', width: "100%" }}>
                     <ResultItem elevation={0} sx={{ textAlign: "left" }}>{res.data}</ResultItem>
                   </Grid>
                 ))

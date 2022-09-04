@@ -48,6 +48,10 @@ export const FormDiv = muiStyled(FormDiv2)(({ theme }) => ({
 
     [theme.breakpoints.down(theme.breakpoints.values.lg)]: {
         margin: "auto 100px"
+    },
+
+    [theme.breakpoints.down(theme.breakpoints.values.lg)]: {
+        margin: "auto 50px"
     }
 }))
 
@@ -64,6 +68,7 @@ export const ResultHeader = muiStyled(Box)(({ theme }) => ({
 
     [theme.breakpoints.down(theme.breakpoints.values.md)]: {
         flexDirection: "column",
+        margin: "auto 50px"
     }
 }));
 

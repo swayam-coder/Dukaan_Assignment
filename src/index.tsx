@@ -58,16 +58,6 @@ const theme = createTheme({
                 }
             ]
         },
-        MuiGrid: {
-            styleOverrides: {
-                item: {
-                    padding: 0
-                },
-                root: {
-                    padding: 0
-                }
-            }
-        }
     }
 })
 

@@ -7,3 +7,18 @@
         transform: translate(0%, 0%);
     }
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+html, body{
+    width:100%;
+    overflow-x:hidden;
+    }
