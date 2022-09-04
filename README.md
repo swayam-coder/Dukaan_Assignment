@@ -1,8 +1,7 @@
-# Frontend Assignment | Dukaan
+# Frontend Assignment | Dukaan®
 #### Deployed Site: https://dukaan-project-swayamnayak.netlify.app/
-#### * Not Mobile Responsive
 
-## Technologies Used
+## Technologies Used.
 
 * ReactJS 
 * Material UI
