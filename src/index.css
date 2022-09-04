@@ -1,0 +1,9 @@
+.footer_logo {
+    transform: translate(100%, 190%);
+}
+
+@media screen and (max-width: "1410px") {
+    .footer_logo {
+        transform: translate(0%, 0%);
+    }
+}

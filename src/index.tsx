@@ -1,22 +1,6 @@
 import * as ReactDOMClient from "react-dom/client";
+import './index.css'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-
-declare module '@mui/material/styles' {
-    interface BreakpointOverrides { 
-        xs: true;
-        sm: true;
-        md: true;
-        lg: true;
-        xl: true;
-        mobileS: true;
-        mobileM: true;
-        mobileL: true;
-        tablet: true;
-        laptop: true;
-        laptopL: true;
-        desktop: true;
-    }
-}
 
 const theme = createTheme({
     typography: {
@@ -39,18 +23,11 @@ const theme = createTheme({
     },
     breakpoints: {
         values: {
-            xs: 0,
-            sm: 0,
-            md: 0,
-            lg: 0,
-            xl: 0,
-            mobileS: 320,
-            mobileM: 375,
-            mobileL: 425,
-            tablet: 768,
-            laptop:  1024,
-            laptopL:  1440,
-            desktop: 2560
+            xs: 320,
+            sm: 425,
+            md: 768,
+            lg: 1024,
+            xl: 1410, 
         }
     },
     components: {
@@ -80,6 +57,16 @@ const theme = createTheme({
                     }
                 }
             ]
+        },
+        MuiGrid: {
+            styleOverrides: {
+                item: {
+                    padding: 0
+                },
+                root: {
+                    padding: 0
+                }
+            }
         }
     }
 })

@@ -8,7 +8,7 @@ const FormDivider1 = muiStyled(Divider)(({ theme }) => ({
     height: "2px",
     background: "#D9D9D9",
 
-    [theme.breakpoints.down(theme.breakpoints.values.laptop)]: {
+    [theme.breakpoints.down(theme.breakpoints.values.lg)]: {
         margin: "auto 100px"
     }
 }))

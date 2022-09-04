@@ -15,15 +15,15 @@ export const FormContainer = muiStyled(Box)(({ theme }) => ({
     borderRadius: "8px",
     marginBottom: "-160px",
 
-    [theme.breakpoints.between('tablet', 'laptop')]: {
+    [theme.breakpoints.between('md', 'lg')]: {
         maxWidth: '600px' 
     },
 
-    [theme.breakpoints.down('tablet')]: {
+    [theme.breakpoints.down('md')]: {
         maxWidth: '400px' 
     },
 
-    [theme.breakpoints.down('mobileL')]: {
+    [theme.breakpoints.down('sm')]: {
         top: 0
     },
 }))
@@ -46,7 +46,7 @@ export const FormDiv = muiStyled(FormDiv2)(({ theme }) => ({
     top: "64px",
     lineHeight: 1.6,
 
-    [theme.breakpoints.down(theme.breakpoints.values.laptop)]: {
+    [theme.breakpoints.down(theme.breakpoints.values.lg)]: {
         margin: "auto 100px"
     }
 }))
@@ -58,11 +58,11 @@ export const ResultHeader = muiStyled(Box)(({ theme }) => ({
     margin: "auto 192px",
     justifyContent: "space-between",
 
-    [theme.breakpoints.down(theme.breakpoints.values.laptop)]: {
+    [theme.breakpoints.down(theme.breakpoints.values.lg)]: {
         margin: "auto 100px" 
     }, 
 
-    [theme.breakpoints.between(theme.breakpoints.values.mobileS, theme.breakpoints.values.tablet)]: {
+    [theme.breakpoints.down(theme.breakpoints.values.md)]: {
         flexDirection: "column",
     }
 }));
@@ -72,12 +72,24 @@ export const ResultDiv = muiStyled(Box)(() => ({
 }));
 
 export const FooterContainer = muiStyled(Grid)(({ theme: { palette: { primary } }}) => ({
-    backgroundColor: primary.dark,
-    height: "100%"
+    height: "70%",
+    padding: "0 50px"
+}));
+
+export const ProductContainer = muiStyled(Grid)(({ theme }) => ({
+    [theme.breakpoints.down(theme.breakpoints.values.md)]: {
+        padding: 0,
+        textAlign: "center"
+    }, 
+
+    [theme.breakpoints.down(theme.breakpoints.values.sm)]: {
+        padding: 0,
+        textAlign: "center"
+    }
 }));
 
 export const HeaderButtons = muiStyled(Box)(({ theme }) => ({
-    [theme.breakpoints.down('tablet')]: {
+    [theme.breakpoints.down('md')]: {
         marginTop: "20px"
     },
 }));

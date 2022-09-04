@@ -7,8 +7,8 @@ import { cardInfo } from '../data';
 export default function Usage() {
     const { palette: { secondary } } = useTheme()
     return (
-        <Box sx={{ height: "400px", backgroundColor: secondary.light }}>
-            <UsageContainer>
+        <Box sx={{ backgroundColor: secondary.light }}>
+            <UsageContainer container rowSpacing={4} columnSpacing={{ xs: 1, sm: 2, md: 3, lg: 4  }}>
                 {cardInfo.map(({ id, path, alt, headingText, content }) => (
                     <UsageCard 
                         key={id}

@@ -1,10 +1,11 @@
 import { Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from '@mui/material'
 import React from 'react'
+import { ProductGrid } from '../styled-components/Grid'
 
 export default function Product({ productInfo: { id, title, description, image } }: any) {
     return (
-        <Grid item xs={4} key={id}>
-            <Card sx={{ maxWidth: 345 }} elevation={0}>
+        <ProductGrid item lg={4} md={6} sm={12} xs={12} key={id}>  
+            <Card sx={{ maxWidth: 345 }} elevation={0}> 
                 <CardActionArea>
                     <CardMedia
                         component="img"
@@ -22,6 +23,6 @@ export default function Product({ productInfo: { id, title, description, image }
                     </CardContent>
                 </CardActionArea>
             </Card>
-        </Grid>
+        </ProductGrid>
     )
 }

@@ -15,7 +15,7 @@ export const SignInBtn = muiStyled(Button)(() => ({
 }))
 
 // const Component = styled.div`
-//     background-color: 'white';
+//     background-color: 'white'; 
 //     color: primary.main;
 // `;
 
@@ -35,7 +35,7 @@ export const FooterBadge = muiStyled(Badge)(({ theme: { palette: { primary } } }
 }))
 
 export const DownloadAllResutsBtn = muiStyled(Button)(({ theme }) => ({
-    [theme.breakpoints.between(theme.breakpoints.values.mobileS, theme.breakpoints.values.tablet)]: {
+    [theme.breakpoints.between(theme.breakpoints.values.xs, theme.breakpoints.values.md)]: {
         paddingTop: "15px"
     },
 }))
