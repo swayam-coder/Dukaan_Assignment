@@ -20,3 +20,16 @@ export const ProductGrid = muiStyled(Grid)(({ theme }) => ({
         justifyContent: "center"
     }
 }))
+
+export const FooterLinksGrid = muiStyled(Grid)(({ theme }) => ({ 
+    [theme.breakpoints.down(theme.breakpoints.values.xl)]: {
+        paddingLeft: 0,
+        paddingRight:0
+    }
+}))
+
+export const FooterLogoGrid = muiStyled(Grid)(({ theme }) => ({ 
+    [theme.breakpoints.down(theme.breakpoints.values.xl)]: {
+        textAlign: 'center'
+    }
+}))

@@ -76,9 +76,14 @@ export const ResultDiv = muiStyled(Box)(() => ({
     
 }));
 
-export const FooterContainer = muiStyled(Grid)(({ theme: { palette: { primary } }}) => ({
+export const FooterContainer = muiStyled(Grid)(({ theme }) => ({
     height: "70%",
-    padding: "0 50px"
+    padding: "0 100px",
+    alignContent: 'center',
+
+    [theme.breakpoints.down(theme.breakpoints.values.sm)]: { 
+        padding: "0px 30px"
+    }, 
 }));
 
 export const ProductContainer = muiStyled(Grid)(({ theme }) => ({

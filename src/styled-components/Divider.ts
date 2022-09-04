@@ -17,9 +17,13 @@ export const FormDivider = muiStyled(FormDivider1)<{ top: string }>`
     top: ${p => p.top };
 `;
 
-export const FooterDivider = muiStyled(FormDivider)<{ top: string }>(({ theme: { palette: { secondary }}}) => ({
+export const FooterDivider = muiStyled(FormDivider)<{ top: string }>(({ theme, theme: { palette: { secondary }}}) => ({
     background: secondary.light,
     height: "0.9px",
     margin: "auto",
-    width: "80%"
+    width: "90%",
+
+    [theme.breakpoints.down(theme.breakpoints.values.xl)]: {
+        margin: 'auto'
+    }
 }))
