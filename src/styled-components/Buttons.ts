@@ -14,11 +14,6 @@ export const SignInBtn = muiStyled(Button)(() => ({
     marginRight: "20px"
 }))
 
-// const Component = styled.div`
-//     background-color: 'white'; 
-//     color: primary.main;
-// `;
-
 export const DownloadBtn = muiStyled(Button)(({ theme: { palette: { primary } } }) => ({
     backgroundColor: 'white', 
     color: primary.main

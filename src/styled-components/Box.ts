@@ -45,6 +45,9 @@ export const FormDiv = muiStyled(FormDiv2)(({ theme }) => ({
     margin: "auto 192px",
     top: "64px",
     lineHeight: 1.6,
+    // h5: {
+
+    // },
 
     [theme.breakpoints.down(theme.breakpoints.values.lg)]: {
         margin: "auto 100px"

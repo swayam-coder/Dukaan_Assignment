@@ -16,3 +16,9 @@ export const FormTitle = muiStyled(Typography)(() => ({
 export const UsageCardDesc = muiStyled(FormTitle)(() => ({
     fontWeight: 400
 }))
+
+export const ProductTitle = muiStyled(Typography)(({ theme }) => ({
+    [theme.breakpoints.down('md')]: {
+        marginTop: "1em"
+    },
+}))
